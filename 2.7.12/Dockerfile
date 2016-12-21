@@ -13,8 +13,8 @@ LABEL documentation="
 MAINTAINER Andrew Wong <nderoo.wong@gmail.com>
 
 # Python Package Install
-pip install illuminate
-pip install beautifulsoup4
-pip install lxml
-pip install Jinja2
-pip install weasyprint
+RUN pip install illuminate && \
+	pip install beautifulsoup4 && \
+	pip install lxml && \
+	pip install Jinja2 && \
+	pip install weasyprint
